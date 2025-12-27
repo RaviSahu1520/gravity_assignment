@@ -1,0 +1,25 @@
+# Analysis options for Smart Travel Planner
+# These are relaxed for an interview assignment
+
+analyzer:
+  errors:
+    # Treat info level issues as info (not errors)
+    unused_import: info
+    unused_local_variable: info
+    prefer_const_constructors: info
+    prefer_const_declarations: info
+    use_key_in_widget_constructors: info
+    avoid_print: info
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    # Disabled for simpler code
+    prefer_const_constructors: false
+    prefer_const_literals_to_create_immutables: false
+    avoid_print: false
+    use_key_in_widget_constructors: false
+    prefer_final_fields: false
+    unnecessary_this: false
